@@ -1,30 +1,26 @@
 # UTS_PemMob4_RivaldoTampubolon
 Repository Github Aplikasi Kuis Pilihan Ganda Untuk Nilai UTS LAB 4 PemMob
+
 a. Nama: Rivaldo Juanda Tampubolon
-    NIM: 231401098
-    Lab: 4
     
-b. Nama Aplikasi: Attack On Knowledge
+NIM: 231401098
+
+Lab: 4
+    
+b. Nama Aplikasi: Valor of Scripture
 
 c. Deskripsi Aplikasi:
-Attack on Knowledge: Quiz Corps adalah aplikasi kuis pilihan ganda yang dirancang untuk menguji dan memperluas wawasan pengguna dalam berbagai tema kepahlawanan dan sejarah lintas zaman.
-Aplikasi ini menghadirkan pengalaman belajar yang dibalut dalam nuansa militeristik dan epik, terinspirasi dari semangat Survey Corps dalam serial Attack on Titan. Melalui antarmuka yang sederhana namun bernuansa heroik, pengguna diajak untuk menempuh misi pengetahuan dan menembus batas ketidaktahuan.
 
-Pengguna akan:
+Valor of Scripture adalah aplikasi kuis pilihan ganda yang dirancang untuk mengasah pengetahuan dan pemahaman Alkitab, sambil menghadirkan pengalaman bermain yang seru dan bernuansa epic fantasy. Terinspirasi dari dunia Attack on Titan dan tema ksatria, aplikasi ini menyajikan atmosfer heroik dan spiritual dalam kuis interaktif yang menantang.
 
-🧭 Memasukkan nama sebagai identitas prajurit pengetahuan.
-🎯 Menjawab serangkaian pertanyaan pilihan ganda seputar tema Attack on Titan, Knight Templar, Samurai, Wild West,hingga militer modern.
-🧠 Menguji ketajaman logika dan daya ingat melalui soal-soal berbasis pengetahuan umum tentang tema tersebut.
-🏅 Melihat skor akhir dan gelar penghargaan, sebagai refleksi atas performa dan dedikasi menjawab setiap tantangan.
-
-
-🎯 Tujuan Pengembangan
-
-Aplikasi ini dikembangkan sebagai sarana pembelajaran interaktif yang:
-Menggabungkan unsur edukatif dan hiburan (edutainment).
-Melatih kemampuan berpikir kritis dan reflektif melalui kuis tematik.
-Memberikan pengalaman pengguna yang imersif, dengan desain dan narasi bernuansa heroik.
+    Tujuan Pengembangan
+    -Membuat pembelajaran Alkitab menjadi modern, interaktif, dan seru.
+    -Memperdalam pengetahuan dan pemahaman firman Tuhan sekaligus menyegarkan ingatan tentang kisah-kisah Alkitab.
+    -Menyajikan pengalaman kuis yang menantang, cepat, dan menghibur, sambil memberi kesempatan untuk mengumpulkan poin dan merefleksikan diri.
+    -Menggabungkan desain visual, tema epik, dan nuansa spiritual dalam satu aplikasi edukatif.
 
 d. Credit:
+
 e. Screenshot/Video Aplikasi:
+
 f. Link mockup/prototype Aplikasi:
