@@ -13,11 +13,11 @@ c. Deskripsi Aplikasi:
 
 Valor of Scripture adalah aplikasi kuis pilihan ganda yang dirancang untuk mengasah pengetahuan dan pemahaman Alkitab, sambil menghadirkan pengalaman bermain yang seru dan bernuansa epic fantasy. Terinspirasi dari dunia Attack on Titan dan tema ksatria, aplikasi ini menyajikan atmosfer heroik dan spiritual dalam kuis interaktif yang menantang.
 
-    Tujuan Pengembangan
-    -Membuat pembelajaran Alkitab menjadi modern, interaktif, dan seru.
-    -Memperdalam pengetahuan dan pemahaman firman Tuhan sekaligus menyegarkan ingatan tentang kisah-kisah Alkitab.
-    -Menyajikan pengalaman kuis yang menantang, cepat, dan menghibur, sambil memberi kesempatan untuk mengumpulkan poin dan merefleksikan diri.
-    -Menggabungkan desain visual, tema epik, dan nuansa spiritual dalam satu aplikasi edukatif.
+Tujuan Pengembangan
+- Membuat pembelajaran Alkitab menjadi modern, interaktif, dan seru.
+- Memperdalam pengetahuan dan pemahaman firman Tuhan sekaligus menyegarkan ingatan tentang kisah-kisah Alkitab.
+- Menyajikan pengalaman kuis yang menantang, cepat, dan menghibur, sambil memberi kesempatan untuk mengumpulkan poin dan merefleksikan diri.
+- Menggabungkan desain visual, tema epik, dan nuansa spiritual dalam satu aplikasi edukatif.
 
 d. Credit:
 
