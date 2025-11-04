@@ -9,7 +9,7 @@ class UserProvider extends ChangeNotifier {
     totalScore: 0,
     gamesPlayed: 0,
     bestScore: 0,
-    rank: 'Recruit',
+    rank: 'Cadet',
   );
 
   UserModel get user => _user;
@@ -26,11 +26,11 @@ class UserProvider extends ChangeNotifier {
         totalScore: prefs.getInt(AppConstants.keyTotalScore) ?? 0,
         gamesPlayed: prefs.getInt(AppConstants.keyGamesPlayed) ?? 0,
         bestScore: prefs.getInt(AppConstants.keyBestScore) ?? 0,
-        rank: prefs.getString(AppConstants.keyCurrentRank) ?? 'Recruit',
+        rank: prefs.getString(AppConstants.keyCurrentRank) ?? 'Cadet',
       );
       notifyListeners();
     } catch (e) {
-      debugPrint('Error loading user data: $e');
+      debugPrint('Error loading user: $e');
     }
   }
 
@@ -43,7 +43,7 @@ class UserProvider extends ChangeNotifier {
       await prefs.setInt(AppConstants.keyBestScore, _user.bestScore);
       await prefs.setString(AppConstants.keyCurrentRank, _user.rank);
     } catch (e) {
-      debugPrint('Error saving user data: $e');
+      debugPrint('Error saving user: $e');
     }
   }
 
@@ -66,58 +66,35 @@ class UserProvider extends ChangeNotifier {
       rank: newRank,
       lastPlayed: DateTime.now(),
     );
-
     notifyListeners();
     await _saveUserData();
   }
 
   String _calculateRank(int totalScore) {
-    String currentRank = 'Recruit';
-
+    String currentRank = 'Cadet';
     AppConstants.rankThresholds.forEach((rank, threshold) {
-      if (totalScore >= threshold) {
-        currentRank = rank;
-      }
+      if (totalScore >= threshold) currentRank = rank;
     });
-
     return currentRank;
   }
 
   Map<String, dynamic> getNextRankInfo() {
     final ranks = AppConstants.rankThresholds.entries.toList();
-    final currentRankIndex = ranks.indexWhere((e) => e.key == _user.rank);
+    final currentIndex = ranks.indexWhere((e) => e.key == _user.rank);
 
-    if (currentRankIndex == -1 || currentRankIndex >= ranks.length - 1) {
-      return {
-        'nextRank': 'Max Rank',
-        'scoreNeeded': 0,
-        'progress': 1.0,
-      };
+    if (currentIndex == -1 || currentIndex >= ranks.length - 1) {
+      return {'nextRank': 'Max Rank', 'scoreNeeded': 0, 'progress': 1.0};
     }
 
-    final nextRank = ranks[currentRankIndex + 1];
-    final currentThreshold = ranks[currentRankIndex].value;
+    final nextRank = ranks[currentIndex + 1];
+    final currentThreshold = ranks[currentIndex].value;
     final nextThreshold = nextRank.value;
-    final scoreNeeded = nextThreshold - _user.totalScore;
-    final progress = (_user.totalScore - currentThreshold) /
-        (nextThreshold - currentThreshold);
+    final progress = (_user.totalScore - currentThreshold) / (nextThreshold - currentThreshold);
 
     return {
       'nextRank': nextRank.key,
-      'scoreNeeded': scoreNeeded,
+      'scoreNeeded': nextThreshold - _user.totalScore,
       'progress': progress.clamp(0.0, 1.0),
     };
-  }
-
-  Future<void> resetUserData() async {
-    _user = UserModel(
-      username: 'Knight',
-      totalScore: 0,
-      gamesPlayed: 0,
-      bestScore: 0,
-      rank: 'Recruit',
-    );
-    notifyListeners();
-    await _saveUserData();
   }
 }

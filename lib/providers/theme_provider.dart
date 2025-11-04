@@ -4,7 +4,6 @@ import '../config/app_constants.dart';
 
 class ThemeProvider extends ChangeNotifier {
   ThemeMode _themeMode = ThemeMode.dark;
-
   ThemeMode get themeMode => _themeMode;
   bool get isDarkMode => _themeMode == ThemeMode.dark;
 
@@ -19,33 +18,18 @@ class ThemeProvider extends ChangeNotifier {
       _themeMode = isDark ? ThemeMode.dark : ThemeMode.light;
       notifyListeners();
     } catch (e) {
-      debugPrint('Error loading theme mode: $e');
+      debugPrint('Error loading theme: $e');
     }
   }
 
   Future<void> toggleTheme() async {
     _themeMode = _themeMode == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
     notifyListeners();
-
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setBool(AppConstants.keyThemeMode, isDarkMode);
     } catch (e) {
-      debugPrint('Error saving theme mode: $e');
-    }
-  }
-
-  Future<void> setThemeMode(ThemeMode mode) async {
-    if (_themeMode == mode) return;
-
-    _themeMode = mode;
-    notifyListeners();
-
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setBool(AppConstants.keyThemeMode, isDarkMode);
-    } catch (e) {
-      debugPrint('Error saving theme mode: $e');
+      debugPrint('Error saving theme: $e');
     }
   }
 }
