@@ -97,4 +97,16 @@ class UserProvider extends ChangeNotifier {
       'progress': progress.clamp(0.0, 1.0),
     };
   }
+
+  Future<void> resetProgress() async {
+    _user = UserModel(
+      username: _user.username, // Keep username
+      totalScore: 0,
+      gamesPlayed: 0,
+      bestScore: 0,
+      rank: 'Cadet',
+    );
+    notifyListeners();
+    await _saveUserData();
+  }
 }
