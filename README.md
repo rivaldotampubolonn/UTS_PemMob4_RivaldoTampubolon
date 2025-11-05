@@ -20,7 +20,13 @@ Tujuan Pengembangan
 - Menggabungkan desain visual, tema epik, dan nuansa spiritual dalam satu aplikasi edukatif.
 
 d. Credit:
+   - [AOTBackground](https://i.redd.it/35ony8vcidd81.png)
+   - [SurveyCorpsLogo](https://mystickermania.com/cdn/stickers/anime/attack-titan-recon-corps-logo-512x512.png)
+   - [FontCinzel](https://fonts.google.com/specimen/Cinzel)
+   - [FontMontserrat](https://fonts.google.com/specimen/Montserrat)
 
 e. Screenshot/Video Aplikasi:
+  - [DemoAplikasi](https://drive.google.com/file/d/1b3bqo4yskb233cewUChF6C_eQinQqmX6/view?usp=drive_link)
 
 f. Link mockup/prototype Aplikasi:
+[MockupFigma](https://www.figma.com/design/licpIuy2skCGjzqvRBCoRV/Valor-of-Scripture?node-id=0-1&p=f&t=4goQIRiR9AlWG2F4-0)
